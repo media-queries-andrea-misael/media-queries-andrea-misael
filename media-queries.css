@@ -1,0 +1,23 @@
+/*@media screen and (min-width:576px) {*/
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav-links{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        list-style:none;
+    }
+    .header-img >img{
+        max-width:200px;
+    }
+    .main, .sub-section{
+        max-width:200px;
+    }
+/*}*/
+/*@media screen and (min-width:992px) {*/
+
+/*}*/
+
