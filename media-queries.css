@@ -30,10 +30,11 @@
     .hidden-on-desktop {
         display: block;
         background-color:paleturquoise;
-        padding: 10px;
+        padding: 15px;
         border: 1px solid gray;
         text-align: center;
         text-decoration: none;
+        margin:10px;
     }
     h1{
         text-align: center;
@@ -53,9 +54,10 @@
         width:100%;
         background-color: lightgray;
         text-align: center;
+        padding: 10px 2px;
     }
     .header-img{
-        margin: 10px;
+        margin: 9px;
         height:200px;
         width:95%;
     }
@@ -79,14 +81,30 @@
     .hidden-on-desktop {
         display: none;
     }
+
     .nav-links {
-        display: inline-block; /* inline-block elements on desktop */
+        display: flex; /* inline-block elements on desktop */
+        justify-content: space-between;
+        align-items: flex-end;
+        float: right;
+        list-style: none;
+
 
     }
 
-}
+    h1 {
+        text-align: left;
+        margin: 0px;
+        float: left;
 
-img {
-    max-width: 100%;
-    height: auto;
+
+
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 100px;
+    }
 }
