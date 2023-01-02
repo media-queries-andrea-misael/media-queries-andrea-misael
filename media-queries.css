@@ -58,8 +58,12 @@
     }
     .header-img{
         margin: 9px;
-        height:200px;
-        width:95%;
+        max-height:100%;
+        max-width:100%;
+    }
+    img{
+        height:224px;
+        width:420px;
     }
     .main, .sub-section{
         margin: 10px;
@@ -85,26 +89,20 @@
     .nav-links {
         display: flex; /* inline-block elements on desktop */
         justify-content: space-between;
-        align-items: flex-end;
-        float: right;
+        align-items: center;
         list-style: none;
 
-
     }
-
     h1 {
         text-align: left;
-        margin: 0px;
+        margin: 0;
         float: left;
 
-
-
     }
-
-
-    img {
+    .header-img {
         max-width: 100%;
-        height: auto;
-        margin: 100px;
+        max-height: 100%;
+        /*margin: auto;*/
+
     }
 }
