@@ -24,24 +24,53 @@
 /* cell */
 @media screen and (max-width: 480px) {
     /* small */
+    body{
+        font-family: sans-serif;
+    }
     .hidden-on-desktop {
         display: block;
-        background-color:cornflowerblue;
+        background-color:paleturquoise;
         padding: 10px;
-        text-decoration: none;
         border: 1px solid gray;
-
+        text-align: center;
+        text-decoration: none;
+    }
+    h1{
+        text-align: center;
     }
     .nav-links {
-        display: block; /* links top */
-        padding: 10px; /* links bottom */
-        background-color: gray;
-        justify-content: space-between;
-
-
-
+        display: flex; /* links top */
+        padding: 5px; /* links bottom */
+        margin:5px;
+        list-style:none;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
     }
-
+    li{
+        margin: 5px;
+        height:30px;
+        width:100%;
+        background-color: lightgray;
+        text-align: center;
+    }
+    .header-img{
+        margin: 10px;
+        height:200px;
+        width:95%;
+    }
+    .main, .sub-section{
+        margin: 10px;
+        height:100px;
+        width:95%;
+    }
+    .sub-section{
+        padding:40px 0px;
+        font-style: italic;
+    }
+    footer{
+        padding:20px 10px;
+    }
 }
 
 /* Desktop */
@@ -52,6 +81,7 @@
     }
     .nav-links {
         display: inline-block; /* inline-block elements on desktop */
+
     }
 
 }
