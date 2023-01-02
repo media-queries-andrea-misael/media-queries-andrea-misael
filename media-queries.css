@@ -1,23 +1,62 @@
 /*@media screen and (min-width:576px) {*/
-    body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .nav-links{
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        list-style:none;
-    }
-    .header-img >img{
-        max-width:200px;
-    }
-    .main, .sub-section{
-        max-width:200px;
-    }
+/*    body {*/
+/*        display: flex;*/
+/*        align-items: center;*/
+/*        flex-direction: column;*/
+/*    }*/
+/*    .nav-links{*/
+/*        display:flex;*/
+/*        flex-direction:column;*/
+/*        justify-content:space-between;*/
+/*        list-style:none;*/
+/*    }*/
+/*    .header-img >img{*/
+/*        max-width:200px;*/
+/*    }*/
+/*    .main, .sub-section{*/
+/*        max-width:200px;*/
+/*    }*/
 /*}*/
 /*@media screen and (min-width:992px) {*/
 
 /*}*/
 
+/* cell */
+@media screen and (max-width: 480px) {
+    /* small */
+    .hidden-on-desktop {
+        display: block;
+        background-color:cornflowerblue;
+        padding: 10px;
+        text-decoration: none;
+        border: 1px solid gray;
+
+    }
+    .nav-links {
+        display: block; /* links top */
+        padding: 10px; /* links bottom */
+        background-color: gray;
+        justify-content: space-between;
+
+
+
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 481px) {
+    /* larger than 480px */
+    .hidden-on-desktop {
+        display: none;
+    }
+    .nav-links {
+        display: inline-block; /* inline-block elements on desktop */
+    }
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
